@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course landing Page</title>
+</head>
+<body>
+    <form action="/publish">
+        <h1>Your Course Landing Page</h1>
+        <label for="courseTitle">Course Title</label>
+        <input type="text" name="courseTitle" id="courseTitle" required>
+        <br>
+        <label for="courseDesc">Course Description</label>
+        <br>
+        <textarea name="courseDesc" id="courseDesc" cols="30" rows="10"></textarea>
+        <br>
+        <label for="skillLevel">Skill Level</label>
+        <select name="skillLevel" id="skillLevel">
+            <option value="B">Beginner Level</option>
+            <option value="I">Intermediate Level</option>
+            <option value="E">Expert Level</option>
+        </select>
+        <br>
+        <label for="publishCourse">Ready to publish the course?</label>
+        <input type="checkbox" name="publishCourse" id="publishCourse">
+        <br>
+        <Button>Submit</Button>
+    </form>
+
+    <form action="/publish">
+        <div>
+            <h1>Your Course Landing Page</h1>
+            <label for="courseTitle">Course Title</label>
+            <input type="text" name="courseTitle" id="courseTitle" required>
+        </div>
+        
+        <div>
+            <label for="courseDesc">Course Description</label>
+            <div>
+                <textarea name="courseDesc" id="courseDesc" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div>
+            <label for="skillLevel">Skill Level</label>
+            <select name="skillLevel" id="skillLevel">
+                <option value="B">Beginner Level</option>
+                <option value="I">Intermediate Level</option>
+                <option value="E">Expert Level</option>
+            </select>
+        </div>
+        <div>
+            <label for="publishCourse">Ready to publish the course?</label>
+            <input type="checkbox" name="publishCourse" id="publishCourse">    
+        </div>
+        <Button>Submit</Button>
+    </form>
+</body>
+</html>

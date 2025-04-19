@@ -1,0 +1,26 @@
+/* We have to select something, and then in curly braces we provide the properties. */
+/* Individual properties are provided as prperty name: value; */
+/* Properties are always in lower case */
+/* e.g. color: red; */
+/* e.g. display: flex; */
+
+#hamburger_button {
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+    background: rgb(250, 250, 250);
+    position: relative;
+}
+
+/* As we discussed before, selector is the first thing that we do for providing styling. */
+
+/* 1. Element Selector. */
+/* Element selector allows us to select the based of the element type of the HTML. */
+/* Select the paragraph elements in the document. */
+p {
+    color: green;
+}
+
+a {
+    color: red;
+}

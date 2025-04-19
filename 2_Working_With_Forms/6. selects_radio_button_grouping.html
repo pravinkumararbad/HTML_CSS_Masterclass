@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selects and Radio Button Groupings</title>
+</head>
+<body>
+    <form action="">
+        <label for="sizeSelector">Select Your Size:</label>
+        <select name="sizeSelector" id="sizeSelector" required>
+            <option value="NA"></option>
+            <option value="S">small</option>
+            <option value="M">medium</option>
+            <option value="L">large</option>
+        </select>
+        <button>Submit</button>
+    </form>
+
+    <form action="">
+        <label for="callMe">Call me!</label>
+        <input type="radio" name="contactMe" id="callMe" value="phone">
+        <label for="emailMe">Email me!</label>
+        <input type="radio" name="contactMe" id="emailMe" value="email">
+        <button>Submit</button>
+    </form>
+</body>
+</html>

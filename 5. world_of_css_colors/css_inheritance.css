@@ -1,0 +1,30 @@
+/* Some CSS properties, like color, are inherited from parent elements if no value is specified. */
+/* Other properties are not inherited and instead have a default initial value. */
+
+/* In the below example if  we check in dev tools, we can see that, */
+/* We have applied the color to ul and li elements and span element inherit the color applied to ul */
+ul {
+    color: yellowgreen;
+}
+
+/* Now let's apply all spans to be different. */
+/* In this case we are now applying the CSS to span which will have it's own style and not inherit it from ul. */
+span {
+    color: orange;
+}
+
+/* If we want to know which properties inherit the CSS props, we can always go to MDN docs. */
+/* And check the formal definition for any propery we will see inherited true or false. */
+
+/* In below example the color is inherited property so all the elements in div will inherit the color. */
+/* As the border is not an inherited property we can see the border is only apllied to the divs and not to the elements inside the div. */
+div {
+    color: red;
+    border: 2px solid blue;
+}
+
+/* There is a way to change this behavior like below */
+/* With this property inherit, we force the border to be inherited for the paragraph elements. */
+p {
+    border: inherit;
+}

@@ -1,0 +1,88 @@
+/* Take a look as the h1 is a block element the background color goes to cover all the length of element. */
+h1 {
+    color: teal;
+    background-color: yellow;
+}
+
+/* Take a look at this example as this is a inline element, we can see only the anchor element
+has the background color and not entire length of block */
+a {
+    background-color: magenta;
+}
+
+/* There are a lot of different ways to provide color. */
+/* Named Color */
+/* There are around 140+ rpedefined named color values. */
+/* We have see this before */
+/* e.g.: color: red; */
+h2 {
+    color: rebeccapurple;
+    background-color: olivedrab;
+}
+
+/* RGB Color */
+/* RGB stands for Red, Green, and Blue */
+/* The RGB channel can go from 0 - 255 */
+/* e.g.: rgb( 105, 10, 214 ) */
+/* e.g.: Blue */
+body {
+    background-color: rgb(0, 0, 255); /* blue */
+    background-color: rgb(255, 0, 255); /* magenta */
+    background-color: rgb(255, 255, 0); /* yellow */
+    background-color: rgb(0, 0, 0); /* Black */
+    background-color: rgb(255, 255, 255); /* white */
+}
+
+/* Hexadecimal Color */
+/* Hex colors are just short hands for the rgb colors. */
+/* #eb13bc -> red: eb, green: 13, blue: bc */
+/* The color coding goes from 0-FF */
+/*  How Hex works as it goes from 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F */
+/* e.g.: color: #f654ff; */
+body {
+    background-color: yellow;
+}
+
+/* RGBA colors */
+/* e.g.: rgba(105, 10, 214, 0.4) The 0.4 is called as alpha channel which denoted the transparency.*/
+body {
+    background-color: green;
+}
+
+h1 {
+    background-color: rgba( 212,0,255, 0.4 )
+}
+
+/* There is one more way to handle the transparency using a property opacity. */
+/* e.g.: opacity: 0.9; */
+/* e.g.: opacity: 90%; */
+
+/* Global Values */
+/* e.g.: opacity: inherit; */
+/* e.g.: opacity: initial; */
+/* e.g.: opacity: revert; */
+/* e.g.: opacity: revert-layer; */
+/* e.g.: opacity: unset; */
+
+/* 
+    In this example the background color aswell as the header 2 applies the opacity.
+    h2 {
+        background-color: cyan;
+        opacity: 0.5;
+    }
+    
+    In below example only the background is applied with the opacity.
+    h2 {
+        rgba( 0, 255, 255, 0.5 );
+    }
+*/
+
+
+h2 {
+    background-color: cyan;
+    opacity: 0.5;
+}
+
+/* HSL Color */
+
+/* HWB Color */
