@@ -1,0 +1,18 @@
+/* Let's highlight Featured Reviews */
+/* Using the below styling we are highlighting all the spans and this is the only way we know it as of now. */
+/* This is a crud way and it highlights and updates font sizes for all the spans, which is incorrect */
+
+span {
+    background-color: gold;
+    font-size: 20px;
+}
+
+/* ID Selector */
+/* Using # we can select the element with perticular id. In below example we can confirm only the Featured Reviews are highlighted. */
+#featured {
+    background-color: red; 
+}
+
+#userRevs {
+    text-decoration: underline wavy green;
+}

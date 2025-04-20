@@ -1,0 +1,22 @@
+p {
+    /* Makes the entire containt uppercase */
+    text-transform: uppercase;
+    /* Capitalizes the first letter of each word in a paragraph. */
+    text-transform: capitalize;
+    /* Makes the entire containt lowercase */
+    text-transform: lowercase;
+    /* Removes the applied transform */
+    text-transform: none;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-decoration-line: line-through;
+    text-decoration-color: cyan;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 5px;
+
+    /* For all the decoration set before we can also use the text-decoratrion on its own as a shorthand. */
+    /* The order in which we provide the decoarations does not matter in this case. */
+    text-decoration: line-through wavy blue 10px;
+}

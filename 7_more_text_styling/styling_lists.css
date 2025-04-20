@@ -1,0 +1,28 @@
+/* list-style_type */
+/* We can also have the sequence which could be followed for the list elements using counter-style. */
+
+/* For now we will be using the commonly used emoji sequences. */
+
+#cast {
+    list-style-type: georgian;
+    list-style-type: disc;
+    list-style-type: circle;
+    list-style-type: kannada;
+    list-style-type: tamil;
+
+    list-style-type: "*-*";
+    list-style-type: none;
+    list-style-type: lower-greek;
+    list-style-type: armenian;
+
+    /* This way we can make the bullet points to be a part of the element. */
+    list-style-position: inside;
+
+    /* This way we can make the bullet points to not be a part of the element. */
+    list-style-position: outside;
+
+    /* list-style-image: this way we can have a image as a bullet point */
+    list-style-image: url(list_item.png);
+
+    margin-left: 50px;
+}

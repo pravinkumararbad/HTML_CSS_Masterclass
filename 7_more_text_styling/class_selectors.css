@@ -1,0 +1,9 @@
+/* Class selectors are used to provide the class attributes to any number of elements in HTML and provide the styling in group. */
+/* In this way we can group a number of elements in class, which suggests we can provide the same styling to some similarly characterized elements. */
+/* It is more common to use classes for styling instead of ids. */
+
+.tag {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
