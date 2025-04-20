@@ -1,0 +1,8 @@
+h1 {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 40px;
+    text-shadow: green 15px -7px 5px;
+    /* We an also provide two shadows by seperating the values using comma. */
+    text-shadow: green 15px -7px 2px, orange 13px -5px 2px;
+}

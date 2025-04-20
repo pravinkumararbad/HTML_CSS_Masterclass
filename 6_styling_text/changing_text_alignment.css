@@ -1,0 +1,26 @@
+/* text_align: This is a important property to align the text to start, end, center, and justify. */
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    /* Be very aware that this does not center the text to page center but centers it to the element size accupancy. */
+    /* Here the h1 takes up whole page size and it does seem like h1 is centered to the page. */
+    text-align: center;
+
+    /* Let's provide the h1 a width of 500px, we have not seen this property. */
+    /* But this will help eloborate that the h1 indeed takes the center of the element occupancy. */
+    /* After this the h1 is not centerred to the poge. */
+    width: 500px;
+
+    /* We also have a CSS property direction which can be used in place of text-align. */
+    /* We are already using text-align direction will not override the behavior. */
+    direction: ltr;
+    direction: rtl;
+}
+
+/* text-align is an inherited CSS property. Let's see an example. */
+body {
+    text-align: center;
+    text-align: justify;
+    /* start and end values for text-align corresponds to right and left values respectively. */
+    text-align: right;
+}

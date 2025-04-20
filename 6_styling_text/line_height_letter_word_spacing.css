@@ -1,0 +1,13 @@
+h1 {
+    letter-spacing: 20px;
+    letter-spacing: -5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    /* This below Line-height shows that the line spacing is 1.1 times the font size. */
+    line-height: 1.1;
+}

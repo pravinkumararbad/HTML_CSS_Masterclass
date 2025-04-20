@@ -1,0 +1,17 @@
+h1 {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: "Sagoe UI";
+}
+
+/* We can also provide the list of fonts, this makes sure if the font is not available, the webpage will look for next font and will adopt to that. */
+h1 {
+    font-family: "Sagoe UI", Futura, sans-serif;
+}
+
+/* Font is inherited style, so we have applied the font here on body, so every element present in body will use this font-family. */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
