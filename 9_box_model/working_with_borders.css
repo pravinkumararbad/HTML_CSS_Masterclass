@@ -1,0 +1,27 @@
+h1 {
+    border-width: 2px;
+    border-color: red;
+    border-top-color: red;
+    border-right-color: orange;
+    border-bottom-color: yellow;
+    border-left-color: green;
+    border-style: solid;
+    border-top-style: dotted;
+}
+
+/* 
+border-style: solid;
+border-style: dotted;
+border-style: double;
+and many more
+*/
+
+/* As always we have shorthand to perform the border styling */
+h1 {
+    border: 2px solid green;
+    border-top-color: purple;
+}
+
+h1 {
+    border-bottom: 3px dashed magenta;
+}

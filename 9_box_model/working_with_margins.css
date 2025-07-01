@@ -1,0 +1,11 @@
+h1 {
+    border: 1px solid salmon;
+    margin: 0;
+    margin-bottom: 30px;
+    /* margin: 10px 20px 30px 50px; */
+    /* margin: 10px 20px */
+}
+
+a {
+    border: 1px solid olive;
+}

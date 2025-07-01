@@ -1,0 +1,64 @@
+/*
+BOX MODEL
+---------
+
+.box {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  border: 5px solid black;
+  box-sizing: content-box; (default)
+}
+
+Total Width: 300 + 20*2 + 5*2 = 350px
+Total Height: 200 + 20*2 + 5*2 = 250px
+
++-------------------------------------------+
+|              5px Border                   |
+|  +-------------------------------------+  |
+|  |          20px Padding               |  |
+|  |   +-----------------------------+   |  |
+|  |   |       Content Area          |   |  |
+|  |   |      (300px x 200px)        |   |  |
+|  |   +-----------------------------+   |  |
+|  +-------------------------------------+  |
++-------------------------------------------+
+
+====================================================================================
+
+.box {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  border: 5px solid black;
+  box-sizing: border-box;
+}
+
+Total Width: 300px  (includes content + padding + border)
+Total Height: 200px
+
++-----------------------------------------+
+|              5px Border                 |
+|  +-----------------------------------+  |
+|  |          20px Padding             |  |
+|  |   +---------------------------+   |  |
+|  |   |       Content Area        |   |  |
+|  |   |      (250px x 150px)      |   |  |
+|  |   +---------------------------+   |  |
+|  +-----------------------------------+  |
++-----------------------------------------+
+
+*/
+
+div {
+    background-color: purple;
+    margin: 30px;
+    height: 200px;
+    width: 200px;
+    border: 5px solid cyan;
+    padding: 10px;
+}
+
+#alternate {
+    box-sizing: border-box;
+}

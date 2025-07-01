@@ -3,3 +3,35 @@
 /* This example selects divs with the class "special" */
 /* e.g.: div.special */
 
+h2.score {
+    color: brown;
+}
+
+h2#summary {
+    color: chartreuse;
+}
+
+/* There are many other selectors just summarizing what we saw and couple which are not covered.
++--------------------------------------------------------------------------------------+
+| Selector | Meaning                                                                   |
+| -------- | ------------------------------------------------------------------------- |
+| `A B`    | **Descendant**: B inside A, anywhere deep                                 |
+| `A > B`  | **Child**: B is a **direct** child of A                                   |
+| `A + B`  | **Adjacent sibling**: B comes **right after** A                           |
+| `A ~ B`  | **General sibling**: B comes **after** A, but not necessarily immediately |
++--------------------------------------------------------------------------------------+
+*/
+
+/* <element class="big score"> */
+.big.score {
+
+}
+
+/* 
+<element class="big">
+  …
+    <element class="score">
+*/
+.big .score {
+
+}
