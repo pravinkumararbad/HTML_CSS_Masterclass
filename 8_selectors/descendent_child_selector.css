@@ -1,0 +1,58 @@
+/* Decendant and Combinators */
+/* The " " (space) combinator selects elements  that are descendats of the first element. */
+/*
+li span {
+    color: green
+}
+*/
+
+/* We can be more specific */
+#cast li span {
+    color: green;
+}
+
+/* Child Combinator */
+/* The > combinator selects elements that are direct children of the first element. */
+/* Both the examples below will color the li under cast, as #cast is an id present as an attribute in ul. */
+/*
+ol li {
+    border: 1px solid red;
+}
+
+ol > li {
+    border: 1px solid red;
+}
+*/
+
+ul > li {
+    color: pink;
+}
+
+#cast > li {
+    color: blue;
+}
+
+ul[id="cast"] > li {
+    color: magenta;
+}
+
+/* Here you will observe the magenta color is not applied unless we delete the first two entries why?
+| Selector Part      | Specificity Value |
+| ------------------ | ----------------- |
+| Inline styles      | 1000              |
+| ID `#id`           | 100               |
+| Class `.class`     | 10                |
+| Attribute `[type]` | 10                |
+| Type `div`, `ul`   | 1                 |
+===========================================
+| Part  | Meaning                                                    | Example                            |
+| ----- | ---------------------------------------------------------- | ---------------------------------- |
+| **A** | Inline styles (applied directly in HTML)                   | `style="color: red"`               |
+| **B** | Number of **ID** selectors (`#id`)                         | `#header`                          |
+| **C** | Number of **class**, attribute, and pseudo-class selectors | `.menu`, `[type="text"]`, `:hover` |
+| **D** | Number of **type** (tag) and pseudo-element selectors      | `div`, `ul`, `li`, `::after`       |
+
+1. ul > li: A-B-C-D => 0-0-0-2
+2. ul[id="cast"] > li: A-B-C-D => 0-0-1-2
+3. #cast > li: A-B-C-D => 0-1-0-1
+*/

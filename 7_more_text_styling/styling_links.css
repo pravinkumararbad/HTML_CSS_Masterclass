@@ -1,0 +1,17 @@
+a:visited {
+    color: orange;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: magenta;
+    text-decoration: underline;
+    /* cursor: crosshair; */
+}
+
+h1:hover {
+    
+}

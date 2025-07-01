@@ -1,0 +1,14 @@
+/* Grouping selector */
+/* This applies the same CSS for all the grouped elements. */
+/*
+h1, h2, h3 {
+    font-family: sans-serif;
+}
+*/
+
+/* 
+.tag, #featured, .score {
+    color: white;
+    background-color: orangered;
+}
+*/

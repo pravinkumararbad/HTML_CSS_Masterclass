@@ -1,0 +1,33 @@
+/* Attribute selector */
+/* Checkboxes are tricky to apply CSS to lets see that later. */
+/*
+input {
+    background-color: gold;
+}
+
+input[type="number"] {
+    background-color: gold;
+}
+*/
+
+/* There is a fancy way to do the attribute selection, specifically for links hrefs */
+/* Links with "wiki" anywhere in the link */
+/*
+a[href*="wiki"] {
+    color:aqua
+}
+*/
+
+/* Links with url that starts with #. */
+/*
+a[href^="#"] {
+    color:red;
+}
+*/
+
+/* Links with url that eends with ".org". */
+/*
+a[href$=".org"] {
+    color:magenta;
+}
+*/
