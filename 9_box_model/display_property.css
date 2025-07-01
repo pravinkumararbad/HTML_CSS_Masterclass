@@ -1,0 +1,72 @@
+p {
+  font-size: 30px;
+}
+
+/* The word is is mentioned here for a span tag. */
+/* Span is a inline tag and it will overlap the styling over the paragraph content, even after adding the margin. */
+#word {
+  border: 10px solid teal;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* On other hand h1 is a block element and will cover the entirety of the length on document. */
+/* This helps us in specifying margin and the conent does not overlap. */
+h1 {
+  border: 10px solid teal;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* height and width properties do not apply on the inline elements. */
+
+/*
+VVIMP
+We can change the behavior of the block element to behave as a block element, and vice versa.
+*/
+
+h1 {
+  border: 10px solid teal;
+  padding: 20px;
+  margin: 20px;
+  display: inline;
+}
+
+
+#word {
+  border: 10px solid teal;
+  padding: 20px;
+  margin: 20px;
+  display: block;
+}
+
+#word {
+  border: 10px solid teal;
+  padding: 20px;
+  margin: 20px;
+  display: block;
+}
+
+/*
+inline-block
+Inline-block is an hybrid of Inline and Block element.
+Box does not breakkk into a new line.
+Width and height are respected.
+Padding, marging, and border will cause other elements to be pushed away from the box.
+In this case we will get best of both the worlds.
+*/
+
+#word {
+  border: 10px solid teal;
+  padding: 20px;
+  margin: 20px;
+  display: inline-block;
+}
+
+.box {
+    border: 1px solid red;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    margin-right: 10px;
+}

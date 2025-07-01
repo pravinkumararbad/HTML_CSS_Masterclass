@@ -1,0 +1,29 @@
+/* Margin collapse is a CSS behavior where vertical margins of adjacent elements combine into one,
+rather than adding together. This happens only for vertical margins, not horizontal. */
+
+/* In this scenario, the first p will have top margin as 10px and bottom margin as 50px */
+/* For second paragraph, the top margin is 20px but is collapsed with bottom margin of first para. */
+
+/* 
+                  ↑
+         20px top margin of 1st <p>
+                  ↓
+     ┌──────────────────────────────┐
+     │  <p> Paragraph One </p>      │
+     └──────────────────────────────┘
+                  ↑
+         50px bottom margin of 1st <p>
+                  ↓
+⎯⎯⎯⎯⎯ Collapsed margin = 50px (NOT 70px)⎯⎯⎯⎯⎯
+                  ↑
+         20px top margin of 2nd <p>
+                  ↓
+     ┌──────────────────────────────┐
+     │  <p> Paragraph Two </p>      │
+     └──────────────────────────────┘
+
+*/
+p {
+  border: 1px solid green;
+  margin: 20px 0px 50px 0px;
+}

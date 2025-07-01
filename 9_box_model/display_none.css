@@ -1,0 +1,13 @@
+/* display: none completely removes an element from the web page layout. It's as if the element doesn't exist in the DOM visually. */
+/* This is not like it is making it invisible, it removes it from DOM. */
+
+/* With opacity being 0, the element is still present in DOM but is not visible. */
+h1 {
+    opacity: 0;
+}
+
+/* With display none the element is removed completly. */
+h1 {
+    display: none;
+}
+

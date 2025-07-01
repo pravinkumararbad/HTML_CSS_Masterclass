@@ -1,0 +1,19 @@
+h1 {
+    margin: -20px;
+}
+
+#container {
+    border: 1px solid purple;
+    background-color: lavenderblush;
+    height: 400px;
+    width: 400px;
+}
+
+#container h3 {
+    text-align: center;
+    border: 1px solid black;
+    width: 150px;
+    /* With this the right and left margins are auto adjustd to center the container. */
+    /* Centering the div vertically is tricky and will come up later. */
+    margin: 0 auto;
+}
