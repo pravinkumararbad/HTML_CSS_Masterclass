@@ -1,0 +1,12 @@
+.box {
+    height: 300px;
+    width: 300px;
+    /* border-radius: 50px; */
+    /* Here the percentage value is relative to the size of element we are trying to apply border rad.*/
+    /* Not with respect to the body element as for the width and height. */
+    border-radius: 50%;  /* This will make it a circle */
+    border-radius: 20%;
+    /* This short hand works a usual in sequencec, top left, top right, bottom right, bottom left. */
+    border-radius: 10% 20% 30% 40%;
+    background-color: blueviolet;
+}

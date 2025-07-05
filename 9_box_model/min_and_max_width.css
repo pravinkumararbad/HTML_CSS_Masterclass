@@ -1,0 +1,12 @@
+.box {
+    /* width: 400px; */
+    width: 60%;
+    /* Width will be of 60 of the porent size but, */
+    /* this will be followed as long as the min and max width of the element is 300px and 600px respectively. */
+    /* Same will be followed for the height. This is not that widely used. */
+    min-width: 300px;
+    max-width: 600px;
+    height: 200px;
+    background-color: mediumvioletred;
+    margin: 0 auto;
+}
